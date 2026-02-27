@@ -7,4 +7,6 @@ urlpatterns = [
    
     path('colleges/', views.colleges, name='colleges'),
     path('students/', views.students, name='students'),
+      path('email/', views.email, name='email'),
+
 ]
