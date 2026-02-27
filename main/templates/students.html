@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Students</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Age</th>
+        <th>Eligible for Vote</th>
+    </tr>
+
+    {% for s in students %}
+    <tr>
+        <td>{{ s.sno }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.branch }}</td>
+        <td>{{ s.age }}</td>
+        <td>
+            {% if s.age >= 18 %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<table class="table table-striped">
+  <tr class="table-primary">teachers</tr>
+  <tr>
+    <th class="table-success">sno</th>
+    <th class="table-success">name</th>
+    <th class="table-success">pno</th>
+  </tr>
+  <tr>
+      <th class="row">1</th>
+      <td>diya</td>
+      <td>9849128333</td>
+    </tr>
+    <tr>
+      <th class="row">2</th>
+      <td>vijaya</td>
+      <td>9849128330</td>
+    </tr>
+    <tr>
+      <th class="row">3</th>
+      <td>devi</td>
+      <td>9849128337</td>
+    </tr>
+</table>
+{% endblock %}
