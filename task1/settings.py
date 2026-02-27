@@ -120,7 +120,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
-STATIC_ROOT='/home/reshmakalidindi/college_website/staticfiles'
+STATIC_ROOT='/home/reshmakalidindi13/college_website/staticfiles'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
